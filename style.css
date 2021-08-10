@@ -149,10 +149,9 @@ nav .fas{
 		padding:10px;
 	}
 	.nav-links {
-		position: absolute;
+		position: fixed;
 		background: #023722;
 		height: 100vh;
-		width: 200px;
 		top: 0;
 		right: -200px;
 		text-align: left;
