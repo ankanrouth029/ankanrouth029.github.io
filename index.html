@@ -1,42 +1,64 @@
 <html>
 
 	<head>
-		<meta  name="viewport"  content="with=device-width" initial-scale= 1.0>
-		<title>University Website Design</title>
+		<meta  name="viewport"  content="width=device-width" initial-scale= 1.0>
+		<title>Website Design</title>
 		<link rel="stylesheet" href="style.css">  
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	</head>
 	
 	<body>
 	
-			<section class="header">  
-			<nav>
+			<section class="header"> 
 			
-				<a href="index.html">
-					<img src="log.jpg"  >
-				</a>
-				<div class="nav-links"> 
-				
-					<ul>
-						<li><a href="">HOME</a></li>
-						<li><a href="">ABOUT</a></li>
-						<li><a href="">OUR GOALS</a></li>
-						<li><a href="">BLOG</a></li>
-						<li><a href="">CONTACT US</a></li>
-					</ul>
-				
+				<nav>
+					<a href="index.html">
+						<img src="log.jpg"  >
+					</a>
+					<div class="nav-links" id="navLinks"> 
+						<i class="fas fa-times" onclick="hideMenu()"></i>
+						
+						<ul>
+							<li><a href="">HOME</a></li>
+							<li><a href="">ABOUT</a></li>
+							<li><a href="">OUR GOALS</a></li>
+							<li><a href="">BLOG</a></li>
+							<li><a href="">CONTACT US</a></li>
+						</ul>
+					
+					</div>
+					<div  class="nav-links2" >
+						<i class="fas fa-bars" onclick="showMenu()"> </i>
+					</div>
+				</nav>
+				<div class="text-box">
+					<h1>Contributing towards a greener tomorrow</h1>
+					<p>Helping individuals contribute to the cause of preserving Mother Nature</p>
+					
+				</div>
+				<div class="text-box2"> 
+					<a href="" class="butn"> <img src="insta2.png" align="center">Visit Us</a> 
 				</div>
 			
-			</nav>
-			<div class="text-box">
-				<h1>Contributing towards a greener tomorrow</h1>
-				<p>Helping individuals contribute to the cause of preserving Mother Nature</p>
-				
-			</div>
-			<div class="text-box2"> <a href="" class="butn"> <img src="insta2.png" align="center">Visit Us</a> </div>
 			</section>
+		
+		<script>
+			
+			var navLinks = document.getElementById("navLinks");
+			
+			function showMenu(){
+				navLinks.style.right= "0";
+				
+			}
+			function hideMenu(){
+				navLinks.style.right= "-200px";
+				
+			}
+			
+		</script>
 	
 	</body>
 
