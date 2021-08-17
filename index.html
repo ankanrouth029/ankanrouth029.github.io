@@ -99,13 +99,22 @@ Ferri meliore ceteros an cum. Per eu veri labore nominavi, his ei erat munere de
 			
 		</script>
 		<script type="text/javascript">	
-		
+			if (screen && screen.width > 700){
 			const bg = document.getElementById('headers');
 				window.addEventListener('scroll', function(){
-						bg.style.backgroundSize =  +windowpageYOffset+'%';
+						bg.style.backgroundSize = 140 - +window.pageYOffset/14+'%';
+						bg.style.opacity = 1 - +window.pageYOffset/800+'';
 						})
 			
-		
+			}
+			else{
+					const bg = document.getElementById('headers');
+				window.addEventListener('scroll', function(){
+						bg.style.backgroundSize = 300 - +window.pageYOffset/14+'%';
+						bg.style.opacity = 1 - +window.pageYOffset/800+'';
+						})
+			
+			}
 		</script>
 	
 	</body>
