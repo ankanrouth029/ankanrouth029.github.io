@@ -9,7 +9,7 @@
 	width: 100%;
 	background-image: linear-gradient(rgb(66, 89, 75,0.5),rgb(66, 89, 75,0.5)),url(back.jpg); 
 	background-position: center;
-	background-size: 140%;
+	background-size: 100%;
 	background-attachment: fixed;
 	position: relative;
 	
