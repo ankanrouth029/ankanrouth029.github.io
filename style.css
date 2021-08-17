@@ -4,14 +4,28 @@
 	font-family: 'Varela Round', sans-serif;
 }
 
-.header{
+#headers{
 	min-height: 100vh;
 	width: 100%;
 	background-image: linear-gradient(rgb(66, 89, 75,0.5),rgb(66, 89, 75,0.5)),url(back.jpg); 
 	background-position: center;
-	background-size: cover;
+	background-size: 120%;
+	background-attachment: fixed;
 	position: relative;
 	
+}
+.scrl {
+	padding: 100px;
+}
+.scrl h2{
+	text-align: center;
+	padding-bottom: 50px;
+	font-size: 60px;
+}
+.scrl p{
+	text-align: justify;
+	padding-bottom: 50px;
+	font-size: 20px;
 }
 nav{
 	display:flex;
@@ -110,6 +124,9 @@ nav .fas{
 }
 
 @media(max-width: 700px){
+	#headers{
+		background-size: cover;
+	}
 	nav img{
 		display: block;
 		margin-left:auto;
@@ -175,5 +192,18 @@ nav .fas{
 		padding: 10px;
 		font-size: 22px;
 		cursor: pointer;
+	}
+	.scrl {
+	padding: 30px;
+	}
+	.scrl h2{
+		text-align: center;
+		padding-bottom: 50px;
+		font-size: 40px;
+	}
+	.scrl p{
+		text-align: justify;
+		padding-bottom: 50px;
+		font-size: 20px;
 	}
 }
