@@ -115,6 +115,7 @@ div img{
 }
 .butn:hover {
 	border: 2px solid #AC1C50;
+	border-radius: 10px;
 	background: #AC1C50;
 	transition: 0.6s;
 	
